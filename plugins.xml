@@ -1,0 +1,5 @@
+<library path="lib/libstair_layer">
+  <class type="stair_detector::StairLayer" base_class_type="costmap_2d::Layer">
+    <description>This is a costmap layer that detects stairs</description>
+  </class>
+</library>

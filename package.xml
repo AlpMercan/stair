@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>stair</name>
+  <version>0.0.0</version>
+  <description>The stair package</description>
+  <maintainer email="alp@todo.todo">alp</maintainer>
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>roscpp</depend>
+  <depend>costmap_2d</depend>
+  <depend>dynamic_reconfigure</depend>
+  <depend>pluginlib</depend>
+  <depend>nav_msgs</depend>
+
+  <export>
+    <costmap_2d plugin="${prefix}/plugins.xml" />
+  </export>
+</package>
