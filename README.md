@@ -27,6 +27,8 @@ sudo apt-get install ros-noetic-turtlebot3-simulations
 ```bash
 cd ~/catkin_ws/src
 git clone https://github.com/AlpMercan/stair_costmap.git
+git clone https://github.com/ros-planning/navigation.git
+add the navigations position of ros planing to your stari_costmaps cmakelist
 ```
 
 2. Build the package:
