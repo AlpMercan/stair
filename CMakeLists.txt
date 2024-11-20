@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.0.2)
 project(stair)
 
+set(COSTMAP_2D_DIR /home/alp/catkin_ws/src/navigation/costmap_2d)
+
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   costmap_2d
@@ -18,6 +20,7 @@ catkin_package(
 include_directories(
   include
   ${catkin_INCLUDE_DIRS}
+  ${COSTMAP_2D_DIR}/include
 )
 
 add_library(stair_layer
@@ -26,3 +29,4 @@ add_library(stair_layer
 target_link_libraries(stair_layer
   ${catkin_LIBRARIES}
 )
+
